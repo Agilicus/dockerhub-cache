@@ -134,7 +134,7 @@ spec:
 ---
 apiVersion: v1
 data:
-  .dockerconfigjson: eyJhdXRocyI6eyJjci5hZ2lsaWN1cy5jb20iOnsiYXV0aCI6Ilkya3RhR1ZzYlMxMGIySnZkRHA0U0VaVVZrRldiME5RZGxNMGN6Sm5la2N4Ymc9PSJ9fX0=
+  .dockerconfigjson: my-reg-secret
 kind: Secret
 metadata:
   name: regcred
