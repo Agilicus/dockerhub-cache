@@ -1,0 +1,15 @@
+---
+variables:
+  DOCKER_DRIVER: overlay2
+  PORT: "2375"
+  DOCKER_HOST: tcp://localhost:2375
+
+stages:
+  - build
+  - autorel
+  - release
+
+include:
+  - project: tooling/pipelines
+    ref: master
+    file: container-release.yml
